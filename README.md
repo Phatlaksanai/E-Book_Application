@@ -11,8 +11,7 @@
 * พัฒนา Mobile Application ด้วย **React Native**
 * ออกแบบและพัฒนาหน้าจอสำหรับการใช้งานแอปพลิเคชัน
 * เชื่อมต่อ Frontend กับ Backend ผ่าน **REST API**
-* จัดการการแสดงผลข้อมูลหนังสือและรูปภาพปกหนังสือ
-* พัฒนาฟังก์ชันสำหรับการจัดการและอ่านหนังสือในรูปแบบ E-Book
+* ดึงข้อมูลหนังสือจาก Backend มาแสดงผลภายในแอปพลิเคชัน
 
 ### Backend Development
 
@@ -20,12 +19,6 @@
 * พัฒนา REST API สำหรับรับส่งข้อมูลระหว่าง Mobile Application และ Database
 * เชื่อมต่อ Backend กับ **MongoDB**
 * จัดการข้อมูลหนังสือและข้อมูลที่เกี่ยวข้องกับผู้ใช้งาน
-
-### File & Image Storage
-
-* เชื่อมต่อ **Cloudinary** สำหรับจัดเก็บไฟล์หนังสือในรูปแบบ E-Book
-* ใช้ Cloudinary สำหรับจัดเก็บรูปภาพปกหนังสือ
-* จัดการ URL สำหรับเข้าถึงไฟล์และรูปภาพจาก Cloudinary
 
 ## Technologies
 
@@ -44,10 +37,6 @@
 
 * MongoDB
 
-### Storage
-
-* Cloudinary
-
 ## System Architecture
 
 ```text
@@ -57,11 +46,8 @@ React Native
      ↓
 Node.js + Express
      │
-     ├──────────────→ MongoDB
-     │
-     └──────────────→ Cloudinary
-                       ├── E-Book Files
-                       └── Book Cover Images
+     ↓
+MongoDB
 ```
 
 ## Project Objective
